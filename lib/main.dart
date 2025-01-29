@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'foo_state.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -56,6 +58,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
+  final FooState _foo = FooState(foo: "test foo");
 
   void _incrementCounter() {
     setState(() {
@@ -112,6 +115,7 @@ class _MyHomePageState extends State<MyHomePage> {
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,
             ),
+            Text("Foo test: ${_foo.foo}"),
           ],
         ),
       ),
