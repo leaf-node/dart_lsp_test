@@ -1,16 +1,9 @@
 # dart_lsp_test
 
-A new Flutter project.
+This repo aims to reproduce [a bug in the Dart
+LSP](https://github.com/dart-lang/sdk/issues/60005#issuecomment-2621762755).
 
-## Getting Started
+To reproduce the error on Dart 3.6.1, right click on the `foo` varialbe in
+VSCodium
+[here](https://github.com/leaf-node/dart_lsp_test/blob/main/lib/foo_cubit.dart#L5).
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
